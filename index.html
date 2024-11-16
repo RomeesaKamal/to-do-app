@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="status-container">
+        <div class="details">
+          <h1>TaskTrax</h1>
+          <p>Stay On Track Every Day</p>
+          <div id="progressStatus">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="status-numbers">
+          <p id="numbers">0 / 0</p>
+        </div>
+      </div>
+
+      <form action="">
+        <input type="text" id="taskInput" placeholder="Write your task" />
+        <button type="submit" id="newTask">+</button>
+      </form>
+      <div class="filters">
+        <div class="filter" data-filter="completed">Complete</div>
+        <div class="filter" data-filter="pending">Incomplete</div>
+        <div class="delete-all">Delete All</div>
+      </div>
+      <ul class="task-list"></ul>
+      <img class="empty-img" src="./assests/empty.svg" alt="" />
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  </body>
+</html>

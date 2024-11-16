@@ -1,0 +1,205 @@
+/* Global styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+/* storing Colors */
+
+:root {
+  --background: #000340;
+  --secondary-background: #171c48;
+  --text-color: #fff;
+  --purple: #828dff;
+  --teal: #24feee;
+}
+
+/* Main container styling */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  margin: 120px auto 0 auto;
+  max-width: 500px;
+}
+
+/* Header styling */
+
+.status-container {
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--purple);
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+
+.details {
+  width: 100%;
+}
+
+#numbers {
+  width: 100px;
+  height: 100px;
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#progressStatus {
+  width: 100%;
+  height: 10px;
+  background-color: var(--secondary-background);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#progress {
+  width: 80%;
+  height: 10px;
+  background-color: var(--teal);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Form styling */
+
+form {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 16px;
+  background-color: var(--secondary-background);
+  border: 1px solid var(--purple);
+  border-radius: 10px;
+  outline: none;
+  color: var(--text-color);
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple);
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+/* Image Styling */
+
+.empty-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/* Task list styling */
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  list-style: none;
+  width: 100%;
+}
+
+.taskItem {
+  width: 100%;
+  display: flex;
+  background-color: var(--secondary-background);
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed p {
+  text-decoration: line-through;
+  color: var(--teal);
+}
+
+.task input {
+  width: 20px;
+  height: 20px;
+}
+
+.taskItem img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Styling of Filter Buttons */
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.filter {
+  color: #eee;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid var(--purple);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.filter.active,
+.filter:hover {
+  background-color: #ad8de9;
+}
+
+.delete-all {
+  color: var(--teal);
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.delete-all:hover {
+  border-radius: 5px;
+  background-color: #ad8de9;
+}
