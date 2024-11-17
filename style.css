@@ -203,3 +203,24 @@ button {
   border-radius: 5px;
   background-color: #ad8de9;
 }
+
+@media(max-width: 518px){
+  .container{
+    margin: 20px;
+  }
+}
+
+@media (max-width: 388px){
+  .details{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+  }
+  .filters{
+    font-size: 16px;
+    display: flex;
+    /* padding: 4px 10px; */
+    justify-content: space-between;
+
+  }
+}

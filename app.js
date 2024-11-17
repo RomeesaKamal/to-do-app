@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Empty Array
+
 let tasks = [];
 
 // Function For Save Task
@@ -40,7 +41,7 @@ const addTask = () => {
     updateTasksList();
     updatestatus();
     saveTask();
-    uploadImage();
+    showAndHideImage();
   }
 };
 
@@ -59,7 +60,7 @@ const deleteTask = (index) => {
   updateTasksList();
   updatestatus();
   saveTask();
-  uploadImage();
+  showAndHideImage();
 };
 
 // Function for Editing Task
@@ -118,7 +119,7 @@ const updateTasksList = (filter = null) => {
     updatestatus();
     taskList.append(listItem);
   });
-  uploadImage();
+  showAndHideImage();
 };
 
 // Filter buttons functionality
@@ -138,12 +139,12 @@ deleteAllButton.addEventListener("click", () => {
   updateTasksList();
   updatestatus();
   saveTask();
-  uploadImage();
+  showAndHideImage();
 });
 
-// Handle empty image visibility
+// Handle Image visibility
 
-const uploadImage = () => {
+const showAndHideImage = () => {
   emptyImage.style.display = tasks.length === 0 ? "block" : "none";
 };
 
