@@ -90,7 +90,6 @@ const updatestatus = () => {
 };
 
 //  Function for Update Task List
-
 const updateTasksList = (filter = null) => {
   taskList.innerHTML = "";
   const filteredTasks = filter
@@ -195,3 +194,5 @@ const blastConfetti = () => {
     startVelocity: 45,
   });
 };
+
+
