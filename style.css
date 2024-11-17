@@ -186,6 +186,7 @@ button {
 .filter.active,
 .filter:hover {
   background-color: #ad8de9;
+
 }
 
 .delete-all {
@@ -202,4 +203,51 @@ button {
 .delete-all:hover {
   border-radius: 5px;
   background-color: #ad8de9;
+}
+
+@media(max-width: 518px){
+  .container{
+    margin: 20px;
+  }
+}
+
+@media (max-width: 470px){
+  .details{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+  }
+  .filters{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+@media (max-width: 456px){
+  .details{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+  }
+  .filters{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+@media (max-width: 418px){
+  .details{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+  }
+  .filters{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+
+  }
 }

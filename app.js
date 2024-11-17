@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Empty Array
+
 let tasks = [];
 
 // Function For Save Task
@@ -37,10 +38,11 @@ const addTask = () => {
   const text = taskInput.value.trim();
   if (text) {
     tasks.push({ text: text, completed: false });
+    taskInput.value = ""; // Clear input field
     updateTasksList();
     updatestatus();
     saveTask();
-    uploadImage();
+    showAndHideImage();
   }
 };
 
@@ -59,7 +61,7 @@ const deleteTask = (index) => {
   updateTasksList();
   updatestatus();
   saveTask();
-  uploadImage();
+  showAndHideImage();
 };
 
 // Function for Editing Task
@@ -92,12 +94,12 @@ const updatestatus = () => {
 //  Function for Update Task List
 
 const updateTasksList = (filter = null) => {
-  taskList.innerHTML = "";
-  const filteredTasks = filter
-    ? tasks.filter((task) =>
-        filter === "completed" ? task.completed : !task.completed
-      )
-    : tasks;
+  taskList.innerHTML = "";  
+  const filteredTasks = filter === "completed"
+  ? tasks.filter(task => task.completed)
+  : filter === "incomplete"
+  ? tasks.filter(task => !task.completed)
+  : tasks; // Show all tasks if filter is null or "all"
   filteredTasks.forEach((task, index) => {
     const listItem = document.createElement("li");
     listItem.innerHTML = `
@@ -118,17 +120,20 @@ const updateTasksList = (filter = null) => {
     updatestatus();
     taskList.append(listItem);
   });
-  uploadImage();
+  showAndHideImage();
 };
 
 // Filter buttons functionality
 
-filters.forEach((filter) => {
+filters.forEach(filter => {
   filter.addEventListener("click", () => {
-    const filterType = filter.getAttribute("data-filter");
-    updateTasksList(filterType);
+    filters.forEach((btn) => btn.classList.remove("active"));
+    filter.classList.add("active");
+      const filterType = filter.getAttribute("data-filter");
+      updateTasksList(filterType === "all" ? null : filterType);
   });
   updatestatus();
+
 });
 
 // Clear all tasks
@@ -138,12 +143,12 @@ deleteAllButton.addEventListener("click", () => {
   updateTasksList();
   updatestatus();
   saveTask();
-  uploadImage();
+  showAndHideImage();
 });
 
-// Handle empty image visibility
+// Handle Image visibility
 
-const uploadImage = () => {
+const showAndHideImage = () => {
   emptyImage.style.display = tasks.length === 0 ? "block" : "none";
 };
 
@@ -195,3 +200,5 @@ const blastConfetti = () => {
     startVelocity: 45,
   });
 };
+
+
