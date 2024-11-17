@@ -38,6 +38,7 @@ const addTask = () => {
   const text = taskInput.value.trim();
   if (text) {
     tasks.push({ text: text, completed: false });
+    taskInput.value = ""; // Clear input field
     updateTasksList();
     updatestatus();
     saveTask();
@@ -93,12 +94,12 @@ const updatestatus = () => {
 //  Function for Update Task List
 
 const updateTasksList = (filter = null) => {
-  taskList.innerHTML = "";
-  const filteredTasks = filter
-    ? tasks.filter((task) =>
-        filter === "completed" ? task.completed : !task.completed
-      )
-    : tasks;
+  taskList.innerHTML = "";  
+  const filteredTasks = filter === "completed"
+  ? tasks.filter(task => task.completed)
+  : filter === "incomplete"
+  ? tasks.filter(task => !task.completed)
+  : tasks; // Show all tasks if filter is null or "all"
   filteredTasks.forEach((task, index) => {
     const listItem = document.createElement("li");
     listItem.innerHTML = `
@@ -124,12 +125,15 @@ const updateTasksList = (filter = null) => {
 
 // Filter buttons functionality
 
-filters.forEach((filter) => {
+filters.forEach(filter => {
   filter.addEventListener("click", () => {
-    const filterType = filter.getAttribute("data-filter");
-    updateTasksList(filterType);
+    filters.forEach((btn) => btn.classList.remove("active"));
+    filter.classList.add("active");
+      const filterType = filter.getAttribute("data-filter");
+      updateTasksList(filterType === "all" ? null : filterType);
   });
   updatestatus();
+
 });
 
 // Clear all tasks
