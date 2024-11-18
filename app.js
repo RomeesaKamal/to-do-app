@@ -22,6 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+ // Set the default active filter to "All Tasks"
+ filters.forEach((filter) => {
+  if (filter.getAttribute("data-filter") === "all") {
+    filter.classList.add("active");
+  } else {
+    filter.classList.remove("active");
+  }
+});
+
+
 // Empty Array
 
 let tasks = [];

@@ -220,8 +220,6 @@ button {
   .filters{
     font-size: 16px;
     display: flex;
-    /* padding: 4px 10px; */
     justify-content: space-between;
-
   }
 }
