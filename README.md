@@ -46,9 +46,9 @@ Start your server by clicking Go Live
 
 ## 🌎 Live Demo:
 
-## Author
-
 - [Live Demo Link](https://romeesakamal.github.io/to-do-app/)
+
+## Author
 
 ### 👤 **Romeesa Kamal**
 
