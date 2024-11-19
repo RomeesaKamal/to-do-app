@@ -2,23 +2,23 @@
 
 # To-Do List App
 
-A sleek and intuitive To-Do List app built with JavaScript. This app helps you organize your day, manage your tasks efficiently, and boost your productivity. Whether it's marking off simple daily chores or tackling big projects, this app will keep you on track!
+A sleek and intuitive To-Do List app built with JavaScript. This app helps you organize your day, manage your tasks efficiently, and boost your productivity. Whether it's marking off simple daily chores or tackling big projects, this app will keep you on track!. It uses local-storage to store the data.
 
 ## 🌟 Features
 
-Task Creation: Effortlessly add your tasks and keep track of everything you need to get done.
+- Task Creation: Effortlessly add your tasks and keep track of everything you need to get done.
 
-Task Completion: Mark tasks as completed with a simple checkbox and feel the satisfaction of checking them off.
+- Task Completion: Mark tasks as completed with a simple checkbox and feel the satisfaction of checking them off.
 
-Edit and Modify: Update or change tasks on the fly with an easy-to-use editing feature.
+- Edit and Modify: Update or change tasks on the fly with an easy-to-use editing feature.
 
-Task Deletion: Remove tasks that are no longer relevant with a quick delete button.
+- Task Deletion: Remove tasks that are no longer relevant with a quick delete button.
 
-Smart Filters: Filter tasks by completion status (All, Completed, Incomplete) for a more organized experience.
+- Smart Filters: Filter tasks by completion status (All, Completed, Incomplete) for a more organized experience.
 
-Persistent Data: Tasks are saved locally using localStorage, ensuring your to-do list is always available when you return.
+- Persistent Data: Tasks are saved locally using localStorage, ensuring your to-do list is always available when you return.
 
-Responsive Design: Perfectly fits on both mobile and desktop screens, making it easy to manage your tasks on the go.
+- Responsive Design: Perfectly fits on both mobile and desktop screens, making it easy to manage your tasks on the go.
 
 ### Getting Started
 
@@ -31,15 +31,11 @@ A Web Browser (preferably Brave)
 ### Setup
 
 Clone the GitHub Repository
-
-run this commands in your terminal:
-npm install
-npm run build
-npm start
+- git clone "https://github.com/RomeesaKamal/to-do-app.git"
 
 ### Usage
 
-After running npm start the website will be opened automatically on your default browser.
+Start your server by clicking Go Live
 
 ## Built With
 
@@ -48,10 +44,10 @@ After running npm start the website will be opened automatically on your default
    **GitHub flow:** Correct use of Branches for deployment and features development.
 
 ## 🌎 Live Demo:
-- [Live Demo Link](https://mujeeb4582.github.io/List-of-to-do-task/dist/)
+- [Live Demo Link](https://RomeesaKamal.github.io/List-of-to-do-task/dist/)
 
 ### 👤 **Romeesa Kamal**
-- GitHub: [@kamalromeesa](https://github.com/kamalromeesa)
+- GitHub: [@kamalromeesa](https://github.com/RomeesaKamal/)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
@@ -64,14 +60,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to the Microverse team for the great curriculum.
+- Thanks to the Mujeeb ur Rehman for the great curriculum.
 - Thanks to the Code Reviewer(s) for the insightful feedback.
-- A great thanks to My coding partner(s), morning session team, and standup - - team for their contributions.
-- Hat tip to anyone whose code was used.
 
-## 📝 License
-
-This project is MIT licensed.
 
 ## Why this is special:
 
@@ -82,5 +73,9 @@ This project is MIT licensed.
 - Persistent and reliable: You won’t have to worry about losing your tasks. The app saves them locally and automatically.
 
 - With this version, you convey more excitement, highlight the beauty of the app, and encourage engagement and collaboration. Feel free to replace placeholder URLs with your actual demo GIFs or screenshots.
+
+## 📝 License
+
+This project is MIT licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
