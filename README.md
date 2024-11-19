@@ -44,9 +44,10 @@ Start your server by clicking Go Live
 
 **GitHub flow:** Correct use of Branches for deployment and features development.
 
+## Author
 ## 🌎 Live Demo:
 
-- [Live Demo Link](https://RomeesaKamal.github.io/List-of-to-do-task/dist/)
+- [Live Demo Link](https://romeesakamal.github.io/to-do-app/)
 
 ### 👤 **Romeesa Kamal**
 
