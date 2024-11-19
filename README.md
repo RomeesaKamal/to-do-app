@@ -31,6 +31,7 @@ A Web Browser (preferably Brave)
 ### Setup
 
 Clone the GitHub Repository
+
 - git clone "https://github.com/RomeesaKamal/to-do-app.git"
 
 ### Usage
@@ -39,17 +40,20 @@ Start your server by clicking Go Live
 
 ## Built With
 
-   **HTML/CSS & JS best practices:** Correct use of tags, elements, properties and syntax.
+**HTML/CSS & JS best practices:** Correct use of tags, elements, properties and syntax.
 
-   **GitHub flow:** Correct use of Branches for deployment and features development.
+**GitHub flow:** Correct use of Branches for deployment and features development.
 
 ## 🌎 Live Demo:
+
 - [Live Demo Link](https://RomeesaKamal.github.io/List-of-to-do-task/dist/)
 
 ### 👤 **Romeesa Kamal**
+
 - GitHub: [@kamalromeesa](https://github.com/RomeesaKamal/)
 
 ## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
