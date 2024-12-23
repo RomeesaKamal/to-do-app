@@ -1,5 +1,7 @@
 ![HTML](https://img.shields.io/badge/-HTML-orange) ![CSS](https://img.shields.io/badge/-CSS-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
 
+[Screenshot of to-do app](./to-do%20app.png)
+
 # To-Do List App
 
 A sleek and intuitive To-Do List app built with JavaScript. This app helps you organize your day, manage your tasks efficiently, and boost your productivity. Whether it's marking off simple daily chores or tackling big projects, this app will keep you on track!. It uses local-storage to store the data.
