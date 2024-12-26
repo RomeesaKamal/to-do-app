@@ -1,6 +1,6 @@
 ![HTML](https://img.shields.io/badge/-HTML-orange) ![CSS](https://img.shields.io/badge/-CSS-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
 
-![Design preview for the To-do app coding ](./assests/to-do-app.png)
+![Design preview for the To-do app coding ](./assests/all-devices-white.png)
 
 
 # To-Do List App
