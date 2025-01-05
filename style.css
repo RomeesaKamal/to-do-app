@@ -206,20 +206,31 @@ button {
 }
 
 @media(max-width: 518px){
-  .container{
-    margin: 20px;
-  }
-}
-
-@media (max-width: 388px){
-  .details{
-    display: flex;
-    gap: 2px;
-    flex-direction: column;
-  }
   .filters{
     font-size: 16px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
   }
+  .container{
+    margin: 20px;
+  }
+  .filter{
+    padding: 8px;
+  }
+}
+
+@media (max-width: 407px){
+  .details{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .filters{
+    font-size: 12px;
+  }
+
+
 }
